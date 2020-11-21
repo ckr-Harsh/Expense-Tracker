@@ -1,15 +1,14 @@
-import React, { useContext } from 'react'
-import {DataNew} from './Context'
+import React, { useContext } from "react";
+import { DataNew } from "./Context";
 
 function Balance() {
-    const [data,setData] =useContext(DataNew);
-    return (
-        <>
-            <h1>Expense Tracker</h1>
-            <h2>Your Balalnce</h2>
-            <h2 >$</h2>
-        </>
-    )
+  const [data, setData] = useContext(DataNew);
+  return (
+    <>
+      <h2>Your Balance</h2>
+      <h2>$</h2>
+    </>
+  );
 }
 
-export default Balance
+export default Balance;
