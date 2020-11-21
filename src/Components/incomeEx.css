@@ -1,0 +1,20 @@
+.incExp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  height: 2rem;
+  text-align: center;
+}
+.one {
+  background-color: green;
+}
+.two {
+  background-color: red;
+}
+
+@media screen and (max-width: 550px) {
+  .incExp {
+    width: 200%;
+  }
+}
