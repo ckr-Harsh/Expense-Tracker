@@ -8,29 +8,37 @@ function IncomeEx() {
   const [mMinus, setMinus] = useState();
 
   useEffect(() => {
-    fire();
+    Fire();
   }, [data]);
 
-  const fire = () => {
+  const Fire = () => {
     setMinus((pre) => {
+      //for mk,
       let a = data.map((val) => val.amount);
       let b = a.filter((val) => val < 0);
-      console.log(b);
-      if (b <= 0) {
-        let d = b.reduce((total, val) => total - val, 0);
+      // console.log(b);
+      let c = b.map(val=>Math.abs(val));
+      // console.log(c);
+      if (c.length > 0) {
+        let d = c.reduce((total, val) => total + val, 0);
         setMinus(d);
       } else {
       }
+      
     });
     setPlus((pre) => {
+      //for MK,
       let a = data.map((val) => val.amount);
       let b = a.filter((val) => val >= 0);
-      console.log(b);
-      if (b >= 0) {
-        let d = b.reduce((total, val) => +total + +val, 0);
+      // console.log(b);
+      let c = b.map(val=>Math.abs(val));
+      // console.log(c);
+      if (c.length > 0) {
+        let d = c.reduce((total, val) => total + +val, 0);
         setPlus(d);
       } else {
       }
+
     });
   };
   return (

@@ -1,11 +1,11 @@
-import React, { use, useState } from "react";
+import React from "react";
 import Balance from "./Components/Balance";
 import TranList from "./Components/TranList";
 import IncomeEx from "./Components/IncomeEx";
 import AddTran from "./Components/AddTran";
 import Context from "./Components/Context";
 import "./App.css";
-import { FormatUnderlined } from "@material-ui/icons";
+
 
 function App() {
   return (
