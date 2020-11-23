@@ -6,6 +6,9 @@
   padding: 1rem;
   font-size: larger;
 }
+.transac-block h3 {
+  text-align: center;
+}
 
 .form-control {
   display: flex;
@@ -18,10 +21,14 @@
 .transac-block button {
   width: 100%;
   padding: 5px;
-  background-color: rgb(0, 174, 255);
+  background-color: rgba(0, 174, 255, 1);
   color: white;
   font-size: larger;
   cursor: pointer;
+  border-radius: 4px;
+}
+.transac-block button:hover {
+  background-color: rgba(0, 174, 255, 0.8);
 }
 
 @media screen and (max-width: 550px) {

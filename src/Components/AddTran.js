@@ -49,6 +49,8 @@ function AddTran() {
             Credit
           </option>
         </select>
+        <br />
+        <br />
         <div className="form-control">
           <label htmlFor="text">Text:</label>
           <input
